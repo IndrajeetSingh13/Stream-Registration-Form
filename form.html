@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Stream Registration Form</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <!-- Introduction -->
+        <div class="Intro">
+            <p class="title">Stream Registration Form</p>
+
+            <p class="about">
+                This form is for choosing the stream in which you want to
+                take admission for your higher secondary education.
+            </p>
+
+            <p class="note">
+                Note: Enter every detail correctly.
+            </p>
+        </div>
+
+
+        <!-- Student Details -->
+        <div class="Student-details">
+
+            <div class="field">
+                <label for="studentName">Student Name</label>
+                <input
+                    id="studentName"
+                    type="text"
+                    placeholder="Enter your name"
+                >
+            </div>
+
+            <div class="field">
+                <label for="schoolID">School ID</label>
+                <input
+                    id="schoolID"
+                    type="text"
+                    placeholder="Enter School ID"
+                >
+            </div>
+
+            <div class="field">
+                <label for="aadharNumber">Aadhar Card Number</label>
+                <input
+                    id="aadharNumber"
+                    type="text"
+                    placeholder="Enter Aadhar Number"
+                >
+            </div>
+
+            <div class="field">
+                <label for="percentage">Percentage in Class X</label>
+                <input
+                    id="percentage"
+                    type="number"
+                    min="0"
+                    max="100"
+                    placeholder="Enter percentage"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- Guardian Details -->
+        <div class="guardian-details">
+
+            <div class="field">
+                <label for="fatherName">Father's Name</label>
+                <input
+                    id="fatherName"
+                    type="text"
+                    placeholder="Enter father's name"
+                >
+            </div>
+
+            <div class="field">
+                <label for="fatherContact">Father's Contact Number</label>
+                <input
+                    id="fatherContact"
+                    type="text"
+                    placeholder="Enter contact number"
+                >
+            </div>
+
+            <div class="field">
+                <label for="motherName">Mother's Name</label>
+                <input
+                    id="motherName"
+                    type="text"
+                    placeholder="Enter mother's name"
+                >
+            </div>
+
+            <div class="field">
+                <label for="motherContact">Mother's Contact Number</label>
+                <input
+                    id="motherContact"
+                    type="text"
+                    placeholder="Enter contact number"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- Additional Details -->
+        <div class="Additional-details">
+
+            <div class="field">
+                <label for="email">Email ID</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter email ID"
+                >
+            </div>
+
+            <div class="field">
+                <label for="alternateContact">Alternate Contact Number</label>
+                <input
+                    id="alternateContact"
+                    type="text"
+                    placeholder="Enter alternate contact number"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- Stream Details -->
+        <div class="Stream-details">
+
+            <p class="section-title">Stream Selection</p>
+
+            <div class="stream-options">
+
+                <div class="radio-option">
+                    <input
+                        type="radio"
+                        name="stream"
+                        id="Science"
+                    >
+                    <label for="Science">Science</label>
+                </div>
+
+                <div class="radio-option">
+                    <input
+                        type="radio"
+                        name="stream"
+                        id="Commerce"
+                    >
+                    <label for="Commerce">Commerce</label>
+                </div>
+
+                <div class="radio-option">
+                    <input
+                        type="radio"
+                        name="stream"
+                        id="Humanities"
+                    >
+                    <label for="Humanities">Humanities</label>
+                </div>
+
+            </div>
+
+
+            <div class="optional-subject field">
+
+                <label for="optional">
+                    Select Optional Subject
+                </label>
+
+                <select name="optional" id="optional">
+
+                    <option value="Mathematics">
+                        Mathematics
+                    </option>
+
+                    <option value="Biology">
+                        Biology
+                    </option>
+
+                    <option value="Computer Science">
+                        Computer Science
+                    </option>
+
+                    <option value="Accountancy">
+                        Accountancy
+                    </option>
+
+                    <option value="BST">
+                        Business Studies
+                    </option>
+
+                    <option value="Geo">
+                        Geography
+                    </option>
+
+                    <option value="Psychology">
+                        Psychology
+                    </option>
+
+                    <option value="PE">
+                        Physical Education
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Documents -->
+        <div class="documents">
+
+            <p class="section-title">Document Upload</p>
+
+            <div class="document-field">
+                <p>Upload Your Passport Size Photo (Max: 5 MB)</p>
+                <input
+                    type="file"
+                    name="Photo"
+                    id="Photo"
+                    accept="image/png, image/jpeg"
+                >
+            </div>
+
+            <div class="document-field">
+                <p>Upload Your Aadhar Card (Max: 5 MB)</p>
+                <input
+                    type="file"
+                    name="Aadhar"
+                    id="Aadhar"
+                    accept="image/png, image/jpeg, application/pdf"
+                >
+            </div>
+
+            <div class="document-field">
+                <p>Upload Your Class X Marksheet (Max: 5 MB)</p>
+                <input
+                    type="file"
+                    name="Marksheet"
+                    id="Marksheet"
+                    accept="image/png, image/jpeg, application/pdf"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- Submit -->
+        <div class="submit-section">
+
+            <button class="submit-btn" type="submit">
+                Submit Application
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
